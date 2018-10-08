@@ -1,5 +1,5 @@
 # R_Install
-Install R-3.5.1 on redhat6 server without root priviledge
+Install R-3.5.1 on Linux server without root priviledge
 
 ## Usage
 
@@ -10,6 +10,8 @@ git clone https://github.com/Kevinzjy/R_Install.git
 cd R_Install
 ./install.sh
 ```
+
+After installation complete, you can delete `./build` directory to save spaces
 
 ## Contact
 

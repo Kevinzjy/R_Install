@@ -99,6 +99,7 @@ tar zxvf ../src/R-3.5.1.tar.gz
 cd R-3.5.1
 ./configure --prefix=${PREFIX}
 make && make install
+cd $SCRIPT_DIR
 
 echo -n "Successfully installed R-3.5.1 to $PREFIX, You may need to add following lines to your .bashrc:
 export PATH=$PREFIX/bin:\$PATH
