@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -eo pipefail
 
 PREFIX=$HOME/R
 CURRENT_DIR=$(pwd)
