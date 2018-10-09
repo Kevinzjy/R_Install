@@ -89,8 +89,18 @@ make && make install
 cd ..
 
 # configure
-export PATH=${PREFIX}/bin:$PATH
-export LD_LIBRARY_PATH=${PREFIX}/include:$LD_LIBRARY_PATH
+if [ $PATH ]; then
+    export PATH=${PREFIX}/bin:$PATH
+else
+    export PATH=${PREFIX}/bin
+fi
+
+if [ $LD_LIBRARY_PATH ]; then
+    export LD_LIBRARY_PATH=${PREFIX}/include:$LD_LIBRARY_PATH
+else
+    export LD_LIBRARY_PATH=${PREFIX}/include
+fi
+
 export CFLAGS="-I${PREFIX}/include"
 export LDFLAGS="-L${PREFIX}/lib"
 
