@@ -107,7 +107,7 @@ export LDFLAGS="-L${PREFIX}/lib"
 # R
 tar zxvf ../src/R-3.5.1.tar.gz
 cd R-3.5.1
-./configure --prefix=${PREFIX}
+./configure --prefix=${PREFIX} --enable-R-shlib
 make && make install
 cd $SCRIPT_DIR
 
