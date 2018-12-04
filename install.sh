@@ -59,6 +59,7 @@ cd build
 tar zxvf ../src/zlib-1.2.11.tar.gz >/dev/null
 cd zlib-1.2.11
 ./configure --prefix=${PREFIX}
+make && make install
 cd ..
 
 # bzip2
@@ -107,7 +108,7 @@ export LDFLAGS="-L${PREFIX}/lib"
 # R
 tar zxvf ../src/R-3.5.1.tar.gz
 cd R-3.5.1
-./configure --prefix=${PREFIX} --enable-R-shlib
+./configure --prefix=${PREFIX} --enable-R-shlib --with-readline=no --with-x=no
 make && make install
 cd $SCRIPT_DIR
 
