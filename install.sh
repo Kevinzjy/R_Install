@@ -65,7 +65,7 @@ cd ..
 # bzip2
 tar zxvf ../src/bzip2-1.0.6.tar.gz
 cd bzip2-1.0.6
-sed -i 's/CFLAGS=/CFLAGS= -fPIC/g' Makefile # enable share lib
+sed -i 's/CFLAGS=/CFLAGS= -fPIC /g' Makefile # enable share lib
 make && make install PREFIX=${PREFIX}
 cd ..
 
