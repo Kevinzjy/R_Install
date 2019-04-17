@@ -46,6 +46,7 @@ if (( $? )); then
 fi
 
 PREFIX=$(cd $PREFIX; pwd)
+echo "Install Destination: $PREFIX"
 
 mkdir build
 if (( $? )); then
