@@ -1,5 +1,5 @@
 # R_Install
-Install R-3.5.1 on Linux server without root priviledge
+Install R-3.5.1 on Linux server without root privilege
 
 ## Prerequisition
 
